@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flower Shop</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Programação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Front-end</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Infraestrutura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Business</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design & UX</a>
+        </li>
+      </ul>
+      <img style="width: 150px; height: auto;" src="logoflor.jpg" alt="Logo da Alurabooks" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Flower</b>Shop</h1>
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Categorias de pesquisa</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Programação</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Front-end</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Infraestrutura</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Business</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Design & UX</a>
+          </li>
+        </ul>
+      </ul>
+      <li class="opções__item"><a href="#" class="opções__link">Minha floricultura</a></li>
+      </ul>
+
+    </div>
+    <div class="container" style="display: flex; justify-content: center; align-items: flex-start;">
+      <div class="item" style="margin: 0 20px; text-align: center;">
+          <a href="#"><img style="width: 150px; height: auto;" src="favoritos.jpg" alt="Cavalo 1"></a>
+          <p>Meus favoritos</p>
+      </div>
+  
+      <div class="item" style="margin: 0 20px; text-align: center;">
+          <a href="#"><img style="width: 150px; height: auto;" src="meuperfil.jpg" alt="Cavalo 2"></a>
+          <p>Meu perfil</p>
+      </div>
+  </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa floricultura o que precisa para seu jardim!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima compra?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Algumas flores da nossa loja!</h2>
+
+    <div class="carrossel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img  style="width: 150px; height: auto;" src="orquídeas.jpg"
+              alt="Orquídeas"></div>
+          <div class="swiper-slide"><img style="width: 200px; height: auto;" src="margarida.jpg"
+              alt="Margarida"></div>
+          <div class="swiper-slide"><img style="width: 150px; height: auto;" src="rosaflor.jpg" 
+            alt="Rosa">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Guia Front-end.svg" alt="Livro Guia front end" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Portugol.svg" alt="Livro sobre portugol" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Acessibilidade.svg" alt="Livro sobre acessibilidade" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descrição__titulo-livro">Flores da Europa</h2>
+            <p class="descrição__texto">
+              Aqui estão algumas flores nativas da Europa
+            </p>
+          </div>
+      
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img style="width: 150px; height: auto;" src="floreseuropa.jpg" alt="Favoritar livro" />
+            </li>
+    
+          </ul>
+          <a href="#" style="width: auto; height: 30px;" class="botões__ancora">Conheça</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Flores mais vendidas</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img style="width: 150px; height: auto;" src="floresdocampo.jpg"
+              alt="Flores do campo"></div>
+          <div class="swiper-slide"><img style="width: 150px; height: auto;" src="girassol.jpg" 
+            alt="Girassol">
+          </div>
+          <div class="swiper-slide"><img style="width: 150px; height: auto;" src="lirios.jpg" 
+            alt="Lírios">
+          </div>
+          <div class="swiper-slide"><img src="img/Guia Front-end.svg" 
+            alt="Livro Guia front end"></div>
+          <div class="swiper-slide"><img src="img/Portugol.svg" 
+            alt="Livro sobre portugol"></div>
+          <div class="swiper-slide"><img src="img/Acessibilidade.svg" 
+            alt="livro sobre acessibilidade"></div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <!-- 1º linha -->
+        <div class="card__descrição">
+          <!-- 1º coluna -->
+          <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você se interesse por...</h3>
+            <h2 class="descrição__titulo-livro">Flores da Ásia</h2>
+            <p class="descrição__texto"> Aqui estão algumas flores nativas da Ásia
+            </p>
+          </div>
+  
+        <!-- 2º linha -->
+        <div class="card__botões">
+          <!-- 1º coluna -->
+          <ul class="botões">
+            <li class="botões__item"><img style="width: 150px; height: auto;" src="floresdaasia.jpg" alt="Adicionar no carrinho de compras"></li>
+          </ul>
+          <!-- 2º coluna -->
+          <a href="#" style="width: auto; height: 30px;" class="botões__ancora">Conheça</a>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">FLORES VISITADAS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Girassol</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Rosa</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Lírios</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Margarida</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Flores do Campo</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Orquídeas</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Cravo</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Dama da Noite</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Atualizações de vendas e chegada de novas flores!
+      </p>
+    </div>
+    <input type="email" placeholder="Cadastre seu e-mail para receber atualizações" class="contato__email">
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Flower Shop</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Direitos da Flower Shop</li>
+      <li class="lista-rodapé__item">
+        <img style="width: 50px; height: auto;" src="logoflor.jpg" alt="Logo da Caelum" />
+        <a href="#" class="lista-rodapé__link">Equipe Flower Shop</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img style="width: 50px; height: auto;" src="atendimento.jpg" alt="Logo da Casa do Código" />
+        <a href="#" class="lista-rodapé__link">Equipe de atendimento ao cliente</a>
+      </li>
+    </ul>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>
